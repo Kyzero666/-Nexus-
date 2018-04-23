@@ -114,4 +114,4 @@ nexus.on('message', function(message) {
           }
   });
 
-nexus.login('process.env.NEXUS_TOKEN');
+nexus.login(process.env.NEXUS_TOKEN);
