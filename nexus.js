@@ -102,7 +102,7 @@ nexus.on('message', function(message) {
         'You just got 150,000 SPINA!',
         'You just got 150,000 SPINA!',
         'You just got 200,000 SPINA!',
-        '```js','JACKPOT!: 1,000,000 SPINA!```'
+        '```JACKPOT!: 1,000,000 SPINA!```'
       ];
       switch (caseargs[0].toUpperCase()) {
         case 'DAILY':
