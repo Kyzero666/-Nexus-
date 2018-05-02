@@ -23,7 +23,7 @@ nexus.on('message', function(message) {
         }
         setTimeout(() => {
           cooldown.delete(message.author.id)
-        }, cdsec * 86300000)
+        }, cdsec * 86000000)
 
         var daily = [
           'No Rewards',                        //001 = 0.01%
@@ -66,80 +66,120 @@ nexus.on('message', function(message) {
           'No Rewards',                        //038
           'No Rewards',                        //039
           'No Rewards',                        //040 = 30%
+          'No Rewards',                        //041
+          'No Rewards',                        //042
+          'No Rewards',                        //043
+          'No Rewards',                        //044
+          'No Rewards',                        //045
+          'No Rewards',                        //046
+          'No Rewards',                        //047
+          'No Rewards',                        //048
+          'No Rewards',                        //049
+          'No Rewards',                        //050 = 40%
+          'No Rewards',                        //051
+          'No Rewards',                        //052
+          'No Rewards',                        //053
+          'No Rewards',                        //054
+          'No Rewards',                        //055
+          'No Rewards',                        //056
+          'No Rewards',                        //057
+          'No Rewards',                        //058
+          'No Rewards',                        //059
+          'No Rewards',                        //060 = 50%
+          'No Rewards',                        //061
+          'No Rewards',                        //062
+          'No Rewards',                        //063
+          'No Rewards',                        //064
+          'No Rewards',                        //065
+          'No Rewards',                        //066
+          'No Rewards',                        //067
+          'No Rewards',                        //068
+          'No Rewards',                        //069
+          'No Rewards',                        //070 = 60%
+          'No Rewards',                        //071
+          'No Rewards',                        //072
+          'No Rewards',                        //073
+          'No Rewards',                        //074
+          'No Rewards',                        //075
+          'No Rewards',                        //076
+          'No Rewards',                        //077
+          'No Rewards',                        //078
+          'No Rewards',                        //079
+          'No Rewards',                        //080 = 70%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 100 SPINA!',           //001 = 0.01%
-          'You just WON 100 SPINA!',           //002
-          'You just WON 100 SPINA!',           //003
-          'You just WON 100 SPINA!',           //004
-          'You just WON 100 SPINA!',           //005
-          'You just WON 100 SPINA!',           //006
-          'You just WON 100 SPINA!',           //007
-          'You just WON 100 SPINA!',           //008
-          'You just WON 100 SPINA!',           //009
-          'You just WON 100 SPINA!',           //010 = 0.10%
-          'You just WON 100 SPINA!',           //011
-          'You just WON 100 SPINA!',           //012
-          'You just WON 100 SPINA!',           //013
-          'You just WON 100 SPINA!',           //014
-          'You just WON 100 SPINA!',           //015
-          'You just WON 100 SPINA!',           //016
-          'You just WON 100 SPINA!',           //017
-          'You just WON 100 SPINA!',           //018
-          'You just WON 100 SPINA!',           //019
-          'You just WON 100 SPINA!',           //020 = 10%
-          'You just WON 100 SPINA!',           //021
-          'You just WON 100 SPINA!',           //022
-          'You just WON 100 SPINA!',           //023
-          'You just WON 100 SPINA!',           //024
-          'You just WON 100 SPINA!',           //025
-          'You just WON 100 SPINA!',           //026
-          'You just WON 100 SPINA!',           //027
-          'You just WON 100 SPINA!',           //028
-          'You just WON 100 SPINA!',           //029
-          'You just WON 100 SPINA!',           //030 = 20%
-          'You just WON 100 SPINA!',           //031
-          'You just WON 100 SPINA!',           //032
-          'You just WON 100 SPINA!',           //033
-          'You just WON 100 SPINA!',           //034
-          'You just WON 100 SPINA!',           //035
-          'You just WON 100 SPINA!',           //036 = 26%
+          //'You just WON 100 SPINA!',           //001 = 0.01%
+          //'You just WON 100 SPINA!',           //002
+          //'You just WON 100 SPINA!',           //003
+          //'You just WON 100 SPINA!',           //004
+          //'You just WON 100 SPINA!',           //005
+          //'You just WON 100 SPINA!',           //006
+          //'You just WON 100 SPINA!',           //007
+          //'You just WON 100 SPINA!',           //008
+          //'You just WON 100 SPINA!',           //009
+          //'You just WON 100 SPINA!',           //010 = 0.10%
+          //'You just WON 100 SPINA!',           //011
+          //'You just WON 100 SPINA!',           //012
+          //'You just WON 100 SPINA!',           //013
+          //'You just WON 100 SPINA!',           //014
+          //'You just WON 100 SPINA!',           //015
+          //'You just WON 100 SPINA!',           //016
+          //'You just WON 100 SPINA!',           //017
+          //'You just WON 100 SPINA!',           //018
+          //'You just WON 100 SPINA!',           //019
+          //'You just WON 100 SPINA!',           //020 = 10%
+          //'You just WON 100 SPINA!',           //021
+          //'You just WON 100 SPINA!',           //022
+          //'You just WON 100 SPINA!',           //023
+          //'You just WON 100 SPINA!',           //024
+          //'You just WON 100 SPINA!',           //025
+          //'You just WON 100 SPINA!',           //026
+          //'You just WON 100 SPINA!',           //027
+          //'You just WON 100 SPINA!',           //028
+          //'You just WON 100 SPINA!',           //029
+          //'You just WON 100 SPINA!',           //030 = 20%
+          //'You just WON 100 SPINA!',           //031
+          //'You just WON 100 SPINA!',           //032
+          //'You just WON 100 SPINA!',           //033
+          //'You just WON 100 SPINA!',           //034
+          //'You just WON 100 SPINA!',           //035
+          //'You just WON 100 SPINA!',           //036 = 26%
           //'You just WON 100 SPINA!',           //037
           //'You just WON 100 SPINA!',           //038
           //'You just WON 100 SPINA!',           //039
           //'You just WON 100 SPINA!',           //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 500 SPINA!',                        //001 = 0.01%
-          'You just WON 500 SPINA!',                        //002
-          'You just WON 500 SPINA!',                        //003
-          'You just WON 500 SPINA!',                        //004
-          'You just WON 500 SPINA!',                        //005
-          'You just WON 500 SPINA!',                        //006
-          'You just WON 500 SPINA!',                        //007
-          'You just WON 500 SPINA!',                        //008
-          'You just WON 500 SPINA!',                        //009
-          'You just WON 500 SPINA!',                        //010 = 0.10%
-          'You just WON 500 SPINA!',                        //011
-          'You just WON 500 SPINA!',                        //012
-          'You just WON 500 SPINA!',                        //013
-          'You just WON 500 SPINA!',                        //014
-          'You just WON 500 SPINA!',                        //015
-          'You just WON 500 SPINA!',                        //016
-          'You just WON 500 SPINA!',                        //017
-          'You just WON 500 SPINA!',                        //018
-          'You just WON 500 SPINA!',                        //019
-          'You just WON 500 SPINA!',                        //020 = 10%
-          'You just WON 500 SPINA!',                        //021
-          'You just WON 500 SPINA!',                        //022
-          'You just WON 500 SPINA!',                        //023
-          'You just WON 500 SPINA!',                        //024
-          'You just WON 500 SPINA!',                        //025
-          'You just WON 500 SPINA!',                        //026
-          'You just WON 500 SPINA!',                        //027
-          'You just WON 500 SPINA!',                        //028
-          'You just WON 500 SPINA!',                        //029
-          'You just WON 500 SPINA!',                        //030 = 20%
-          'You just WON 500 SPINA!',                        //031
-          'You just WON 500 SPINA!',                        //032 = 22%
+          //'You just WON 500 SPINA!',                        //001 = 0.01%
+          //'You just WON 500 SPINA!',                        //002
+          //'You just WON 500 SPINA!',                        //003
+          //'You just WON 500 SPINA!',                        //004
+          //'You just WON 500 SPINA!',                        //005
+          //'You just WON 500 SPINA!',                        //006
+          //'You just WON 500 SPINA!',                        //007
+          //'You just WON 500 SPINA!',                        //008
+          //'You just WON 500 SPINA!',                        //009
+          //'You just WON 500 SPINA!',                        //010 = 0.10%
+          //'You just WON 500 SPINA!',                        //011
+          //'You just WON 500 SPINA!',                        //012
+          //'You just WON 500 SPINA!',                        //013
+          //'You just WON 500 SPINA!',                        //014
+          //'You just WON 500 SPINA!',                        //015
+          //'You just WON 500 SPINA!',                        //016
+          //'You just WON 500 SPINA!',                        //017
+          //'You just WON 500 SPINA!',                        //018
+          //'You just WON 500 SPINA!',                        //019
+          //'You just WON 500 SPINA!',                        //020 = 10%
+          //'You just WON 500 SPINA!',                        //021
+          //'You just WON 500 SPINA!',                        //022
+          //'You just WON 500 SPINA!',                        //023
+          //'You just WON 500 SPINA!',                        //024
+          //'You just WON 500 SPINA!',                        //025
+          //'You just WON 500 SPINA!',                        //026
+          //'You just WON 500 SPINA!',                        //027
+          //'You just WON 500 SPINA!',                        //028
+          //'You just WON 500 SPINA!',                        //029
+          //'You just WON 500 SPINA!',                        //030 = 20%
+          //'You just WON 500 SPINA!',                        //031
+          //'You just WON 500 SPINA!',                        //032 = 22%
           //'You just WON 500 SPINA!',                        //033
           //'You just WON 500 SPINA!',                        //034
           //'You just WON 500 SPINA!',                        //035
@@ -149,34 +189,34 @@ nexus.on('message', function(message) {
           //'You just WON 500 SPINA!',                        //039
           //'You just WON 500 SPINA!',                        //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 1,000 SPINA!',                        //001 = 0.01%
-          'You just WON 1,000 SPINA!',                        //002
-          'You just WON 1,000 SPINA!',                        //003
-          'You just WON 1,000 SPINA!',                        //004
-          'You just WON 1,000 SPINA!',                        //005
-          'You just WON 1,000 SPINA!',                        //006
-          'You just WON 1,000 SPINA!',                        //007
-          'You just WON 1,000 SPINA!',                        //008
-          'You just WON 1,000 SPINA!',                        //009
-          'You just WON 1,000 SPINA!',                        //010 = 0.10%
-          'You just WON 1,000 SPINA!',                        //011
-          'You just WON 1,000 SPINA!',                        //012
-          'You just WON 1,000 SPINA!',                        //013
-          'You just WON 1,000 SPINA!',                        //014
-          'You just WON 1,000 SPINA!',                        //015
-          'You just WON 1,000 SPINA!',                        //016
-          'You just WON 1,000 SPINA!',                        //017
-          'You just WON 1,000 SPINA!',                        //018
-          'You just WON 1,000 SPINA!',                        //019
-          'You just WON 1,000 SPINA!',                        //020 = 10%
-          'You just WON 1,000 SPINA!',                        //021
-          'You just WON 1,000 SPINA!',                        //022
-          'You just WON 1,000 SPINA!',                        //023
-          'You just WON 1,000 SPINA!',                        //024
-          'You just WON 1,000 SPINA!',                        //025
-          'You just WON 1,000 SPINA!',                        //026
-          'You just WON 1,000 SPINA!',                        //027
-          'You just WON 1,000 SPINA!',                        //028 = 18%
+          //'You just WON 1,000 SPINA!',                        //001 = 0.01%
+          //'You just WON 1,000 SPINA!',                        //002
+          //'You just WON 1,000 SPINA!',                        //003
+          //'You just WON 1,000 SPINA!',                        //004
+          //'You just WON 1,000 SPINA!',                        //005
+          //'You just WON 1,000 SPINA!',                        //006
+          //'You just WON 1,000 SPINA!',                        //007
+          //'You just WON 1,000 SPINA!',                        //008
+          //'You just WON 1,000 SPINA!',                        //009
+          //'You just WON 1,000 SPINA!',                        //010 = 0.10%
+          //'You just WON 1,000 SPINA!',                        //011
+          //'You just WON 1,000 SPINA!',                        //012
+          //'You just WON 1,000 SPINA!',                        //013
+          //'You just WON 1,000 SPINA!',                        //014
+          //'You just WON 1,000 SPINA!',                        //015
+          //'You just WON 1,000 SPINA!',                        //016
+          //'You just WON 1,000 SPINA!',                        //017
+          //'You just WON 1,000 SPINA!',                        //018
+          //'You just WON 1,000 SPINA!',                        //019
+          //'You just WON 1,000 SPINA!',                        //020 = 10%
+          //'You just WON 1,000 SPINA!',                        //021
+          //'You just WON 1,000 SPINA!',                        //022
+          //'You just WON 1,000 SPINA!',                        //023
+          //'You just WON 1,000 SPINA!',                        //024
+          //'You just WON 1,000 SPINA!',                        //025
+          //'You just WON 1,000 SPINA!',                        //026
+          //'You just WON 1,000 SPINA!',                        //027
+          //'You just WON 1,000 SPINA!',                        //028 = 18%
           //'You just WON 1,000 SPINA!',                        //029
           //'You just WON 1,000 SPINA!',                        //030 = 20%
           //'You just WON 1,000 SPINA!',                        //031
@@ -190,30 +230,30 @@ nexus.on('message', function(message) {
           //'You just WON 1,000 SPINA!',                        //039
           //'You just WON 1,000 SPINA!',                        //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 5,000 SPINA!',                        //001 = 0.01%
-          'You just WON 5,000 SPINA!',                        //002
-          'You just WON 5,000 SPINA!',                        //003
-          'You just WON 5,000 SPINA!',                        //004
-          'You just WON 5,000 SPINA!',                        //005
-          'You just WON 5,000 SPINA!',                        //006
-          'You just WON 5,000 SPINA!',                        //007
-          'You just WON 5,000 SPINA!',                        //008
-          'You just WON 5,000 SPINA!',                        //009
-          'You just WON 5,000 SPINA!',                        //010 = 0.10%
-          'You just WON 5,000 SPINA!',                        //011
-          'You just WON 5,000 SPINA!',                        //012
-          'You just WON 5,000 SPINA!',                        //013
-          'You just WON 5,000 SPINA!',                        //014
-          'You just WON 5,000 SPINA!',                        //015
-          'You just WON 5,000 SPINA!',                        //016
-          'You just WON 5,000 SPINA!',                        //017
-          'You just WON 5,000 SPINA!',                        //018
-          'You just WON 5,000 SPINA!',                        //019
-          'You just WON 5,000 SPINA!',                        //020 = 10%
-          'You just WON 5,000 SPINA!',                        //021
-          'You just WON 5,000 SPINA!',                        //022
-          'You just WON 5,000 SPINA!',                        //023
-          'You just WON 5,000 SPINA!',                        //024 = 14%
+          //'You just WON 5,000 SPINA!',                        //001 = 0.01%
+          //'You just WON 5,000 SPINA!',                        //002
+          //'You just WON 5,000 SPINA!',                        //003
+          //'You just WON 5,000 SPINA!',                        //004
+          //'You just WON 5,000 SPINA!',                        //005
+          //'You just WON 5,000 SPINA!',                        //006
+          //'You just WON 5,000 SPINA!',                        //007
+          //'You just WON 5,000 SPINA!',                        //008
+          //'You just WON 5,000 SPINA!',                        //009
+          //'You just WON 5,000 SPINA!',                        //010 = 0.10%
+          //'You just WON 5,000 SPINA!',                        //011
+          //'You just WON 5,000 SPINA!',                        //012
+          //'You just WON 5,000 SPINA!',                        //013
+          //'You just WON 5,000 SPINA!',                        //014
+          //'You just WON 5,000 SPINA!',                        //015
+          //'You just WON 5,000 SPINA!',                        //016
+          //'You just WON 5,000 SPINA!',                        //017
+          //'You just WON 5,000 SPINA!',                        //018
+          //'You just WON 5,000 SPINA!',                        //019
+          //'You just WON 5,000 SPINA!',                        //020 = 10%
+          //'You just WON 5,000 SPINA!',                        //021
+          //'You just WON 5,000 SPINA!',                        //022
+          //'You just WON 5,000 SPINA!',                        //023
+          //'You just WON 5,000 SPINA!',                        //024 = 14%
           //'You just WON 5,000 SPINA!',                        //025
           //'You just WON 5,000 SPINA!',                        //026
           //'You just WON 5,000 SPINA!',                        //027
@@ -231,26 +271,26 @@ nexus.on('message', function(message) {
           //'You just WON 5,000 SPINA!',                        //039
           //'You just WON 5,000 SPINA!',                        //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 10,000 SPINA!',                        //001 = 0.01%
-          'You just WON 10,000 SPINA!',                        //002
-          'You just WON 10,000 SPINA!',                        //003
-          'You just WON 10,000 SPINA!',                        //004
-          'You just WON 10,000 SPINA!',                        //005
-          'You just WON 10,000 SPINA!',                        //006
-          'You just WON 10,000 SPINA!',                        //007
-          'You just WON 10,000 SPINA!',                        //008
-          'You just WON 10,000 SPINA!',                        //009
-          'You just WON 10,000 SPINA!',                        //010 = 0.10%
-          'You just WON 10,000 SPINA!',                        //011
-          'You just WON 10,000 SPINA!',                        //012
-          'You just WON 10,000 SPINA!',                        //013
-          'You just WON 10,000 SPINA!',                        //014
-          'You just WON 10,000 SPINA!',                        //015
-          'You just WON 10,000 SPINA!',                        //016
-          'You just WON 10,000 SPINA!',                        //017
-          'You just WON 10,000 SPINA!',                        //018
-          'You just WON 10,000 SPINA!',                        //019
-          'You just WON 10,000 SPINA!',                        //020 = 10%
+          //'You just WON 10,000 SPINA!',                        //001 = 0.01%
+          //'You just WON 10,000 SPINA!',                        //002
+          //'You just WON 10,000 SPINA!',                        //003
+          //'You just WON 10,000 SPINA!',                        //004
+          //'You just WON 10,000 SPINA!',                        //005
+          //'You just WON 10,000 SPINA!',                        //006
+          //'You just WON 10,000 SPINA!',                        //007
+          //'You just WON 10,000 SPINA!',                        //008
+          //'You just WON 10,000 SPINA!',                        //009
+          //'You just WON 10,000 SPINA!',                        //010 = 0.10%
+          //'You just WON 10,000 SPINA!',                        //011
+          //'You just WON 10,000 SPINA!',                        //012
+          //'You just WON 10,000 SPINA!',                        //013
+          //'You just WON 10,000 SPINA!',                        //014
+          //'You just WON 10,000 SPINA!',                        //015
+          //'You just WON 10,000 SPINA!',                        //016
+          //'You just WON 10,000 SPINA!',                        //017
+          //'You just WON 10,000 SPINA!',                        //018
+          //'You just WON 10,000 SPINA!',                        //019
+          //'You just WON 10,000 SPINA!',                        //020 = 10%
           //'You just WON 10,000 SPINA!',                        //021
           //'You just WON 10,000 SPINA!',                        //022
           //'You just WON 10,000 SPINA!',                        //023
@@ -272,20 +312,20 @@ nexus.on('message', function(message) {
           //'You just WON 10,000 SPINA!',                        //039
           //'You just WON 10,000 SPINA!',                        //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
-          'You just WON 50,000 SPINA!',                        //001 = 0.01%
-          'You just WON 50,000 SPINA!',                        //002
-          'You just WON 50,000 SPINA!',                        //003
-          'You just WON 50,000 SPINA!',                        //004
-          'You just WON 50,000 SPINA!',                        //005
-          'You just WON 50,000 SPINA!',                        //006
-          'You just WON 50,000 SPINA!',                        //007
-          'You just WON 50,000 SPINA!',                        //008
-          'You just WON 50,000 SPINA!',                        //009
-          'You just WON 50,000 SPINA!',                        //010 = 0.10%
-          'You just WON 50,000 SPINA!',                        //011
-          'You just WON 50,000 SPINA!',                        //012
-          'You just WON 50,000 SPINA!',                        //013
-          'You just WON 50,000 SPINA!',                        //014 = 4%
+          //'You just WON 50,000 SPINA!',                        //001 = 0.01%
+          //'You just WON 50,000 SPINA!',                        //002
+          //'You just WON 50,000 SPINA!',                        //003
+          //'You just WON 50,000 SPINA!',                        //004
+          //'You just WON 50,000 SPINA!',                        //005
+          //'You just WON 50,000 SPINA!',                        //006
+          //'You just WON 50,000 SPINA!',                        //007
+          //'You just WON 50,000 SPINA!',                        //008
+          //'You just WON 50,000 SPINA!',                        //009
+          //'You just WON 50,000 SPINA!',                        //010 = 0.10%
+          //'You just WON 50,000 SPINA!',                        //011
+          //'You just WON 50,000 SPINA!',                        //012
+          //'You just WON 50,000 SPINA!',                        //013
+          //'You just WON 50,000 SPINA!',                        //014 = 4%
           //'You just WON 50,000 SPINA!',                        //015
           //'You just WON 50,000 SPINA!',                        //016
           //'You just WON 50,000 SPINA!',                        //017
@@ -314,16 +354,16 @@ nexus.on('message', function(message) {
           //'You just WON 50,000 SPINA!',                        //040 = 30%
   ///////////////////////////////////////////////////////////////////////////////
           'You just WON 100,000 SPINA!',                        //001 = 0.01%
-          'You just WON 100,000 SPINA!',                        //002
-          'You just WON 100,000 SPINA!',                        //003
-          'You just WON 100,000 SPINA!',                        //004
-          'You just WON 100,000 SPINA!',                        //005
-          'You just WON 100,000 SPINA!',                        //006
-          'You just WON 100,000 SPINA!',                        //007
-          'You just WON 100,000 SPINA!',                        //008
-          'You just WON 100,000 SPINA!',                        //009
-          'You just WON 100,000 SPINA!',                        //010 = 0.10%
-          'You just WON 100,000 SPINA!',                        //011 = 1%
+          'You just WON 100,000 SPINA!',                        //002 = 0.02%
+          //'You just WON 100,000 SPINA!',                        //003
+          //'You just WON 100,000 SPINA!',                        //004
+          //'You just WON 100,000 SPINA!',                        //005
+          //'You just WON 100,000 SPINA!',                        //006
+          //'You just WON 100,000 SPINA!',                        //007
+          //'You just WON 100,000 SPINA!',                        //008
+          //'You just WON 100,000 SPINA!',                        //009
+          //'You just WON 100,000 SPINA!',                        //010 = 0.10%
+          //'You just WON 100,000 SPINA!',                        //011 = 1%
           //'You just WON 100,000 SPINA!',                        //012
           //'You just WON 100,000 SPINA!',                        //013
           //'You just WON 100,000 SPINA!',                        //014
@@ -394,7 +434,253 @@ nexus.on('message', function(message) {
           //'You just WON 10 VITA III!',                        //038
           //'You just WON 10 VITA III!',                        //039
           //'You just WON 10 VITA III!',                        //040 = 30%
-  ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 30 BITTER NUT!',                        //001 = 0.01%
+          'You just WON 30 BITTER NUT!',                        //002
+          'You just WON 30 BITTER NUT!',                        //003
+          'You just WON 30 BITTER NUT!',                        //004
+          'You just WON 30 BITTER NUT!',                        //005
+          'You just WON 30 BITTER NUT!',                        //006
+          'You just WON 30 BITTER NUT!',                        //007
+          'You just WON 30 BITTER NUT!',                        //008
+          'You just WON 30 BITTER NUT!',                        //009
+          'You just WON 30 BITTER NUT!',                        //010 = 0.10%
+          'You just WON 30 BITTER NUT!',                        //011
+          'You just WON 30 BITTER NUT!',                        //012
+          'You just WON 30 BITTER NUT!',                        //013
+          'You just WON 30 BITTER NUT!',                        //014
+          'You just WON 30 BITTER NUT!',                        //015
+          'You just WON 30 BITTER NUT!',                        //016
+          'You just WON 30 BITTER NUT!',                        //017
+          'You just WON 30 BITTER NUT!',                        //018
+          'You just WON 30 BITTER NUT!',                        //019
+          'You just WON 30 BITTER NUT!',                        //020 = 10%
+          'You just WON 30 BITTER NUT!',                        //021
+          'You just WON 30 BITTER NUT!',                        //022
+          'You just WON 30 BITTER NUT!',                        //023
+          'You just WON 30 BITTER NUT!',                        //024
+          'You just WON 30 BITTER NUT!',                        //025
+          'You just WON 30 BITTER NUT!',                        //026
+          'You just WON 30 BITTER NUT!',                        //027
+          'You just WON 30 BITTER NUT!',                        //028 = 18%
+          //'You just WON 30 BITTER NUT!',                        //029
+          //'You just WON 30 BITTER NUT!',                        //030 = 20%
+          //'You just WON 30 BITTER NUT!',                        //031
+          //'You just WON 30 BITTER NUT!',                        //032
+          //'You just WON 30 BITTER NUT!',                        //033
+          //'You just WON 30 BITTER NUT!',                        //034
+          //'You just WON 30 BITTER NUT!',                        //035
+          //'You just WON 30 BITTER NUT!',                        //036
+          //'You just WON 30 BITTER NUT!',                        //037
+          //'You just WON 30 BITTER NUT!',                        //038
+          //'You just WON 30 BITTER NUT!',                        //039
+          //'You just WON 30 BITTER NUT!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 99 NISEL WOOD!',                        //001 = 0.01%
+          'You just WON 99 NISEL WOOD!',                        //002
+          'You just WON 99 NISEL WOOD!',                        //003
+          'You just WON 99 NISEL WOOD!',                        //004
+          'You just WON 99 NISEL WOOD!',                        //005
+          'You just WON 99 NISEL WOOD!',                        //006
+          'You just WON 99 NISEL WOOD!',                        //007
+          'You just WON 99 NISEL WOOD!',                        //008
+          'You just WON 99 NISEL WOOD!',                        //009
+          'You just WON 99 NISEL WOOD!',                        //010 = 0.10%
+          'You just WON 99 NISEL WOOD!',                        //011
+          'You just WON 99 NISEL WOOD!',                        //012
+          'You just WON 99 NISEL WOOD!',                        //013
+          'You just WON 99 NISEL WOOD!',                        //014
+          'You just WON 99 NISEL WOOD!',                        //015
+          'You just WON 99 NISEL WOOD!',                        //016
+          'You just WON 99 NISEL WOOD!',                        //017
+          'You just WON 99 NISEL WOOD!',                        //018
+          'You just WON 99 NISEL WOOD!',                        //019
+          'You just WON 99 NISEL WOOD!',                        //020 = 10%
+          'You just WON 99 NISEL WOOD!',                        //021
+          'You just WON 99 NISEL WOOD!',                        //022
+          'You just WON 99 NISEL WOOD!',                        //023
+          'You just WON 99 NISEL WOOD!',                        //024
+          'You just WON 99 NISEL WOOD!',                        //025
+          'You just WON 99 NISEL WOOD!',                        //026
+          'You just WON 99 NISEL WOOD!',                        //027
+          'You just WON 99 NISEL WOOD!',                        //028 = 18%
+          //'You just WON 99 NISEL WOOD!',                        //029
+          //'You just WON 99 NISEL WOOD!',                        //030 = 20%
+          //'You just WON 99 NISEL WOOD!',                        //031
+          //'You just WON 99 NISEL WOOD!',                        //032
+          //'You just WON 99 NISEL WOOD!',                        //033
+          //'You just WON 99 NISEL WOOD!',                        //034
+          //'You just WON 99 NISEL WOOD!',                        //035
+          //'You just WON 99 NISEL WOOD!',                        //036
+          //'You just WON 99 NISEL WOOD!',                        //037
+          //'You just WON 99 NISEL WOOD!',                        //038
+          //'You just WON 99 NISEL WOOD!',                        //039
+          //'You just WON 99 NISEL WOOD!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 99 STRANGE SHINING POWDER!',                        //001 = 0.01%
+          'You just WON 99 STRANGE SHINING POWDER!',                        //002
+          'You just WON 99 STRANGE SHINING POWDER!',                        //003
+          'You just WON 99 STRANGE SHINING POWDER!',                        //004
+          'You just WON 99 STRANGE SHINING POWDER!',                        //005
+          'You just WON 99 STRANGE SHINING POWDER!',                        //006
+          'You just WON 99 STRANGE SHINING POWDER!',                        //007
+          'You just WON 99 STRANGE SHINING POWDER!',                        //008
+          'You just WON 99 STRANGE SHINING POWDER!',                        //009
+          'You just WON 99 STRANGE SHINING POWDER!',                        //010 = 0.10%
+          'You just WON 99 STRANGE SHINING POWDER!',                        //011
+          'You just WON 99 STRANGE SHINING POWDER!',                        //012
+          'You just WON 99 STRANGE SHINING POWDER!',                        //013
+          'You just WON 99 STRANGE SHINING POWDER!',                        //014
+          'You just WON 99 STRANGE SHINING POWDER!',                        //015
+          'You just WON 99 STRANGE SHINING POWDER!',                        //016
+          'You just WON 99 STRANGE SHINING POWDER!',                        //017
+          'You just WON 99 STRANGE SHINING POWDER!',                        //018
+          'You just WON 99 STRANGE SHINING POWDER!',                        //019
+          'You just WON 99 STRANGE SHINING POWDER!',                        //020 = 10%
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //021
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //022
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //023
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //024
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //025
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //026
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //027
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //028
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //029
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //030 = 20%
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //031
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //032
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //033
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //034
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //035
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //036
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //037
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //038
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //039
+          //'You just WON 99 STRANGE SHINING POWDER!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 99 STEEL HORN!',                        //001 = 0.01%
+          'You just WON 99 STEEL HORN!',                        //002
+          'You just WON 99 STEEL HORN!',                        //003
+          'You just WON 99 STEEL HORN!',                        //004
+          'You just WON 99 STEEL HORN!',                        //005
+          'You just WON 99 STEEL HORN!',                        //006
+          'You just WON 99 STEEL HORN!',                        //007
+          'You just WON 99 STEEL HORN!',                        //008
+          'You just WON 99 STEEL HORN!',                        //009
+          'You just WON 99 STEEL HORN!',                        //010 = 0.10%
+          'You just WON 99 STEEL HORN!',                        //011
+          'You just WON 99 STEEL HORN!',                        //012
+          'You just WON 99 STEEL HORN!',                        //013
+          'You just WON 99 STEEL HORN!',                        //014
+          'You just WON 99 STEEL HORN!',                        //015
+          'You just WON 99 STEEL HORN!',                        //016
+          'You just WON 99 STEEL HORN!',                        //017
+          'You just WON 99 STEEL HORN!',                        //018
+          'You just WON 99 STEEL HORN!',                        //019
+          'You just WON 99 STEEL HORN!',                        //020 = 10%
+          //'You just WON 99 STEEL HORN!',                        //021
+          //'You just WON 99 STEEL HORN!',                        //022
+          //'You just WON 99 STEEL HORN!',                        //023
+          //'You just WON 99 STEEL HORN!',                        //024
+          //'You just WON 99 STEEL HORN!',                        //025
+          //'You just WON 99 STEEL HORN!',                        //026
+          //'You just WON 99 STEEL HORN!',                        //027
+          //'You just WON 99 STEEL HORN!',                        //028
+          //'You just WON 99 STEEL HORN!',                        //029
+          //'You just WON 99 STEEL HORN!',                        //030 = 20%
+          //'You just WON 99 STEEL HORN!',                        //031
+          //'You just WON 99 STEEL HORN!',                        //032
+          //'You just WON 99 STEEL HORN!',                        //033
+          //'You just WON 99 STEEL HORN!',                        //034
+          //'You just WON 99 STEEL HORN!',                        //035
+          //'You just WON 99 STEEL HORN!',                        //036
+          //'You just WON 99 STEEL HORN!',                        //037
+          //'You just WON 99 STEEL HORN!',                        //038
+          //'You just WON 99 STEEL HORN!',                        //039
+          //'You just WON 99 STEEL HORN!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 99 FAIRY FEATHER!',                        //001 = 0.01%
+          'You just WON 99 FAIRY FEATHER!',                        //002
+          'You just WON 99 FAIRY FEATHER!',                        //003
+          'You just WON 99 FAIRY FEATHER!',                        //004
+          'You just WON 99 FAIRY FEATHER!',                        //005
+          'You just WON 99 FAIRY FEATHER!',                        //006
+          'You just WON 99 FAIRY FEATHER!',                        //007
+          'You just WON 99 FAIRY FEATHER!',                        //008
+          'You just WON 99 FAIRY FEATHER!',                        //009
+          'You just WON 99 FAIRY FEATHER!',                        //010 = 0.10%
+          'You just WON 99 FAIRY FEATHER!',                        //011
+          'You just WON 99 FAIRY FEATHER!',                        //012
+          'You just WON 99 FAIRY FEATHER!',                        //013
+          'You just WON 99 FAIRY FEATHER!',                        //014
+          'You just WON 99 FAIRY FEATHER!',                        //015
+          'You just WON 99 FAIRY FEATHER!',                        //016
+          'You just WON 99 FAIRY FEATHER!',                        //017
+          'You just WON 99 FAIRY FEATHER!',                        //018
+          'You just WON 99 FAIRY FEATHER!',                        //019
+          'You just WON 99 FAIRY FEATHER!',                        //020 = 10%
+          'You just WON 99 FAIRY FEATHER!',                        //021
+          'You just WON 99 FAIRY FEATHER!',                        //022
+          'You just WON 99 FAIRY FEATHER!',                        //023
+          'You just WON 99 FAIRY FEATHER!',                        //024
+          'You just WON 99 FAIRY FEATHER!',                        //025
+          'You just WON 99 FAIRY FEATHER!',                        //026
+          'You just WON 99 FAIRY FEATHER!',                        //027
+          'You just WON 99 FAIRY FEATHER!',                        //028
+          'You just WON 99 FAIRY FEATHER!',                        //029
+          'You just WON 99 FAIRY FEATHER!',                        //030 = 20%
+          //'You just WON 99 FAIRY FEATHER!',                        //031
+          //'You just WON 99 FAIRY FEATHER!',                        //032
+          //'You just WON 99 FAIRY FEATHER!',                        //033
+          //'You just WON 99 FAIRY FEATHER!',                        //034
+          //'You just WON 99 FAIRY FEATHER!',                        //035
+          //'You just WON 99 FAIRY FEATHER!',                        //036
+          //'You just WON 99 FAIRY FEATHER!',                        //037
+          //'You just WON 99 FAIRY FEATHER!',                        //038
+          //'You just WON 99 FAIRY FEATHER!',                        //039
+          //'You just WON 99 FAIRY FEATHER!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
+          'You just WON 99 COARSE BEAST FUR!',                        //001 = 0.01%
+          'You just WON 99 COARSE BEAST FUR!',                        //002
+          'You just WON 99 COARSE BEAST FUR!',                        //003
+          'You just WON 99 COARSE BEAST FUR!',                        //004
+          'You just WON 99 COARSE BEAST FUR!',                        //005
+          'You just WON 99 COARSE BEAST FUR!',                        //006
+          'You just WON 99 COARSE BEAST FUR!',                        //007
+          'You just WON 99 COARSE BEAST FUR!',                        //008
+          'You just WON 99 COARSE BEAST FUR!',                        //009
+          'You just WON 99 COARSE BEAST FUR!',                        //010 = 0.10%
+          'You just WON 99 COARSE BEAST FUR!',                        //011
+          'You just WON 99 COARSE BEAST FUR!',                        //012
+          'You just WON 99 COARSE BEAST FUR!',                        //013
+          'You just WON 99 COARSE BEAST FUR!',                        //014
+          'You just WON 99 COARSE BEAST FUR!',                        //015
+          'You just WON 99 COARSE BEAST FUR!',                        //016
+          'You just WON 99 COARSE BEAST FUR!',                        //017
+          'You just WON 99 COARSE BEAST FUR!',                        //018
+          'You just WON 99 COARSE BEAST FUR!',                        //019
+          'You just WON 99 COARSE BEAST FUR!',                        //020 = 10%
+          //'You just WON 99 COARSE BEAST FUR!',                        //021
+          //'You just WON 99 COARSE BEAST FUR!',                        //022
+          //'You just WON 99 COARSE BEAST FUR!',                        //023
+          //'You just WON 99 COARSE BEAST FUR!',                        //024
+          //'You just WON 99 COARSE BEAST FUR!',                        //025
+          //'You just WON 99 COARSE BEAST FUR!',                        //026
+          //'You just WON 99 COARSE BEAST FUR!',                        //027
+          //'You just WON 99 COARSE BEAST FUR!',                        //028
+          //'You just WON 99 COARSE BEAST FUR!',                        //029
+          //'You just WON 99 COARSE BEAST FUR!',                        //030 = 20%
+          //'You just WON 99 COARSE BEAST FUR!',                        //031
+          //'You just WON 99 COARSE BEAST FUR!',                        //032
+          //'You just WON 99 COARSE BEAST FUR!',                        //033
+          //'You just WON 99 COARSE BEAST FUR!',                        //034
+          //'You just WON 99 COARSE BEAST FUR!',                        //035
+          //'You just WON 99 COARSE BEAST FUR!',                        //036
+          //'You just WON 99 COARSE BEAST FUR!',                        //037
+          //'You just WON 99 COARSE BEAST FUR!',                        //038
+          //'You just WON 99 COARSE BEAST FUR!',                        //039
+          //'You just WON 99 COARSE BEAST FUR!',                        //040 = 30%
+///////////////////////////////////////////////////////////////////////////////
           'You just WON 10 MAGI ADD III!',                        //001 = 0.01%
           'You just WON 10 MAGI ADD III!',                        //002
           'You just WON 10 MAGI ADD III!',                        //003
@@ -450,14 +736,14 @@ nexus.on('message', function(message) {
           'You just WON 99 ENERGY BOTTLE!',                        //012
           'You just WON 99 ENERGY BOTTLE!',                        //013
           'You just WON 99 ENERGY BOTTLE!',                        //014
-          'You just WON 99 ENERGY BOTTLE!',                        //015
-          'You just WON 99 ENERGY BOTTLE!',                        //016
-          'You just WON 99 ENERGY BOTTLE!',                        //017
-          'You just WON 99 ENERGY BOTTLE!',                        //018
-          'You just WON 99 ENERGY BOTTLE!',                        //019
-          'You just WON 99 ENERGY BOTTLE!',                        //020 = 10%
-          'You just WON 99 ENERGY BOTTLE!',                        //021
-          'You just WON 99 ENERGY BOTTLE!',                        //022 = 12%
+          'You just WON 99 ENERGY BOTTLE!',                        //015 = 5%
+          //'You just WON 99 ENERGY BOTTLE!',                        //016
+          //'You just WON 99 ENERGY BOTTLE!',                        //017
+          //'You just WON 99 ENERGY BOTTLE!',                        //018
+          //'You just WON 99 ENERGY BOTTLE!',                        //019
+          //'You just WON 99 ENERGY BOTTLE!',                        //020 = 10%
+          //'You just WON 99 ENERGY BOTTLE!',                        //021
+          //'You just WON 99 ENERGY BOTTLE!',                        //022 = 12%
           //'You just WON 99 ENERGY BOTTLE!',                        //023
           //'You just WON 99 ENERGY BOTTLE!',                        //024
           //'You just WON 99 ENERGY BOTTLE!',                        //025
@@ -497,11 +783,11 @@ nexus.on('message', function(message) {
           'You just WON 99 FLOWER NECTAR!',                        //018
           'You just WON 99 FLOWER NECTAR!',                        //019
           'You just WON 99 FLOWER NECTAR!',                        //020 = 10%
-          'You just WON 99 FLOWER NECTAR!',                        //021
-          'You just WON 99 FLOWER NECTAR!',                        //022
-          'You just WON 99 FLOWER NECTAR!',                        //023
-          'You just WON 99 FLOWER NECTAR!',                        //024
-          'You just WON 99 FLOWER NECTAR!',                        //025 15%
+          //'You just WON 99 FLOWER NECTAR!',                        //021
+          //'You just WON 99 FLOWER NECTAR!',                        //022
+          //'You just WON 99 FLOWER NECTAR!',                        //023
+          //'You just WON 99 FLOWER NECTAR!',                        //024
+          //'You just WON 99 FLOWER NECTAR!',                        //025 15%
           //'You just WON 99 FLOWER NECTAR!',                        //026
           //'You just WON 99 FLOWER NECTAR!',                        //027
           //'You just WON 99 FLOWER NECTAR!',                        //028
@@ -573,12 +859,12 @@ nexus.on('message', function(message) {
           'You just WON 1 ANTI-DEGRADATION!',                        //012
           'You just WON 1 ANTI-DEGRADATION!',                        //013
           'You just WON 1 ANTI-DEGRADATION!',                        //014
-          'You just WON 1 ANTI-DEGRADATION!',                        //015
-          'You just WON 1 ANTI-DEGRADATION!',                        //016
-          'You just WON 1 ANTI-DEGRADATION!',                        //017
-          'You just WON 1 ANTI-DEGRADATION!',                        //018
-          'You just WON 1 ANTI-DEGRADATION!',                        //019
-          'You just WON 1 ANTI-DEGRADATION!',                        //020 = 10%
+          'You just WON 1 ANTI-DEGRADATION!',                        //015 = 5%
+          //'You just WON 1 ANTI-DEGRADATION!',                        //016
+          //'You just WON 1 ANTI-DEGRADATION!',                        //017
+          //'You just WON 1 ANTI-DEGRADATION!',                        //018
+          //'You just WON 1 ANTI-DEGRADATION!',                        //019
+          //'You just WON 1 ANTI-DEGRADATION!',                        //020 = 10%
           //'You just WON 1 ANTI-DEGRADATION!',                        //021
           //'You just WON 1 ANTI-DEGRADATION!',                        //022
           //'You just WON 1 ANTI-DEGRADATION!',                        //023
@@ -610,11 +896,11 @@ nexus.on('message', function(message) {
           'You just WON 1 ORICHALCUM!',                        //008
           'You just WON 1 ORICHALCUM!',                        //009
           'You just WON 1 ORICHALCUM!',                        //010 = 0.10%
-          'You just WON 1 ORICHALCUM!',                        //011
-          'You just WON 1 ORICHALCUM!',                        //012
-          'You just WON 1 ORICHALCUM!',                        //013
-          'You just WON 1 ORICHALCUM!',                        //014
-          'You just WON 1 ORICHALCUM!',                        //015 = 5%
+          //'You just WON 1 ORICHALCUM!',                        //011
+          //'You just WON 1 ORICHALCUM!',                        //012
+          //'You just WON 1 ORICHALCUM!',                        //013
+          //'You just WON 1 ORICHALCUM!',                        //014
+          //'You just WON 1 ORICHALCUM!',                        //015 = 5%
           //'You just WON 1 ORICHALCUM!',                        //016
           //'You just WON 1 ORICHALCUM!',                        //017
           //'You just WON 1 ORICHALCUM!',                        //018
@@ -651,11 +937,11 @@ nexus.on('message', function(message) {
           'You just WON 10 DAMASCUS ORE!',                        //008
           'You just WON 10 DAMASCUS ORE!',                        //009
           'You just WON 10 DAMASCUS ORE!',                        //010 = 0.10%
-          'You just WON 10 DAMASCUS ORE!',                        //011
-          'You just WON 10 DAMASCUS ORE!',                        //012
-          'You just WON 10 DAMASCUS ORE!',                        //013
-          'You just WON 10 DAMASCUS ORE!',                        //014
-          'You just WON 10 DAMASCUS ORE!',                        //015 = 5%
+          //'You just WON 10 DAMASCUS ORE!',                        //011
+          //'You just WON 10 DAMASCUS ORE!',                        //012
+          //'You just WON 10 DAMASCUS ORE!',                        //013
+          //'You just WON 10 DAMASCUS ORE!',                        //014
+          //'You just WON 10 DAMASCUS ORE!',                        //015 = 5%
           //'You just WON 10 DAMASCUS ORE!',                        //016
           //'You just WON 10 DAMASCUS ORE!',                        //017
           //'You just WON 10 DAMASCUS ORE!',                        //018
@@ -682,18 +968,18 @@ nexus.on('message', function(message) {
           //'You just WON 10 DAMASCUS ORE!',                        //039
           //'You just WON 10 DAMASCUS ORE!',                        //040 = 30%
 
-          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //001
-          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //002
-          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //003
-          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //004
-          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //005 = 0.05%
+          '```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //001 = 0.01%
+          //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //002
+          //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //003
+          //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //004
+          //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```',   //005 = 0.05%
           //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```'   //006
           //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```'   //007
           //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```'   //008
           //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```'   //009
           //'```JACKPOT!: ANY 1 ARMOR/ADDITIONAL DYE!```'   //010 = 0.10%
 
-          '```SPECIAL JACKPOT!: 1 CRYSTA!```'   //001 = 0.01%
+          //'```SPECIAL JACKPOT!: 1 CRYSTA!```'   //001 = 0.01%
           //'```SPECIAL JACKPOT!: 1 CRYSTA!```'  //002
           //'```SPECIAL JACKPOT!: 1 CRYSTA!```'  //003
           //'```SPECIAL JACKPOT!: 1 CRYSTA!```'  //004
