@@ -16,7 +16,7 @@ nexus.on('message', function(message) {
       if(cooldown.has(message.author.id)){
         message.delete();
         message.reply('Sorry, you already claimed your daily gift.')
-        return message.reply('Reset time will be 00:00/12:00AM +8 GMT').then(message => {message.delete(10000)});
+        return message.reply('Reset time will be 24 hours from now.').then(message => {message.delete(10000)});
       }
       if(!message.member.hasPermission('ADMINISTRATOR')){
           cooldown.add(message.member.id);
