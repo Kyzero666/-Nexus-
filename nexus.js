@@ -1014,4 +1014,21 @@ nexus.on('message', function(message) {
 
   });
 
+  nexus.on('message', function(message) {
+    if(message.author.nexus) return;
+    var msg = message.content.split(' ')[0].toUpperCase()
+    let sender = message.author;
+    let cont = message.content.slice(prefix.length).split(' ');
+    let args = message.content.split(' ').slice(1);
+    let suffix = args.join(' ')
+    if(msg === "!SAYZX") {
+       message.delete(0);
+      if(suffix) {
+        message.channel.send(suffix)
+      } else {
+        message.channel.send('nothing to say master')
+      }
+    }
+});
+
 nexus.login(process.env.NEXUS_TOKEN);
